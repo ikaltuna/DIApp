@@ -10,4 +10,11 @@
       <ion-title size="large">tab5</ion-title>
     </ion-toolbar>
   </ion-header>
+  <app-header-tab titulo="tab5"></app-header-tab>
+  <ion-list *ngFor="let it of valoresLista"> 
+    <ion-item a href="http://{{it.url}}"> 
+      <ion-img src="assets/img/{{it.imagen}}"></ion-img> 
+    </ion-item> 
+  </ion-list> 
+     
 </ion-content>
